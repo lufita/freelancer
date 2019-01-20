@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFF"
+            >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/regis_icon"
+            android:padding="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:hint="E-mail"
+                android:id="@+id/emailTxt"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:id="@+id/passTxt"
+                android:hint="Password" />
+
+            <Button
+                android:text="Register"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#FFFF"
+                android:id="@+id/regisButton"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:text="Already Have an Account?"
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/logButton"
+                android:background="@null"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
